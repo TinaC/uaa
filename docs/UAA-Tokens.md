@@ -93,10 +93,11 @@ A brief and informative [tutorial](http://tutorials.jenkov.com/oauth2/index.html
 An access token can be requested in four different ways, in the Oauth specification they are referred to as 
 [grant types](http://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-1.3)
 
-  1. client_credentials - no user involved. requesting a token to represent a client only
-  2. password - the client uses the user's credentials and passes them to the UAA to generate a token
+  1. client_credentials - no user involved. requesting a token to represent a client only.
+  2. password - the client uses the user's credentials and passes them to the UAA to generate a token.
+     
      This is the method we used in our example.
-  3. implicit - this is similar to the password grant, but a client password(secret) is not needed
+  3. implicit - this is similar to the password grant, but a client password(secret) is not needed.
   4. authorization_code - in this scenario, the client never sees the user's credentials. It is the most secure
      grant type but relies on 302 redirects from the HTTP protocol.
 
